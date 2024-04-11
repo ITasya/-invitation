@@ -342,3 +342,8 @@ main {
     width: 300px;
   }
 }
+@media only screen and (max-width: 350px) {
+  .page__tickets img {
+    height: 160px;
+  }
+}
