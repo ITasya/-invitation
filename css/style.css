@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&display=swap");
+.marck-script-regular {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+@font-face {
+  font-family: "icon";
+  font-display: swap;
+  src: url("../fonts/icon.woff") format("woff"),
+    url("../fonts/icon.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+[class*="_icon-"]::before {
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"]::before {
+  display: block;
+}
+._icon-heart:before {
+  content: "\e909";
+}
+._icon-location:before {
+  content: "\e947";
+}
+
+[class*="__container"] {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+body {
+  font-family: "Marck Script", cursive;
+  font-size: 28px;
+  color: #fff;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #ffa9ae66;
+}
+.page {
+  padding: 50px 0 30px 0;
+}
+.page:last-child {
+  padding-bottom: 50px;
+}
+.page__title {
+  font-family: "Lobster", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.title-main {
+  margin-bottom: 30px;
+}
+
+.page__text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.page__text span {
+  font-size: 36px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff17b5;
+  z-index: 1;
+  padding: 0 8px;
+}
+.page__text span::before {
+  position: absolute;
+  color: #fff;
+  z-index: -1;
+}
+.text-two span {
+  padding: 0;
+}
+.page__tickets {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page__tickets img {
+  width: 450px;
+  height: 217px;
+  border-radius: 10px;
+}
+.page__location {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(3px);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.page__location-text {
+  display: flex;
+  margin-bottom: 0;
+}
+.page__location-text::before {
+  padding-right: 15px;
+}
+.page-map__items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.page-map__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .page-map__item:not(:last-child) {
+  margin-right: 25px;
+}
+.page-map__image {
+  width: 550px;
+  margin: 0 auto;
+}
+.page-map__image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.page__buttons {
+  display: flex;
+  gap: 25px;
+}
+.page__btn {
+  width: 100px;
+  height: 40px;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 28px;
+  color: #ff17b5;
+  transition: all 0.3s;
+}
+.page__btn:hover {
+  color: #fff;
+  background-color: #ff75d3;
+}
+.page__btn:active {
+  color: #fff;
+  background-color: #ff75d3;
+}
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 3;
+}
+
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  border-radius: 10px;
+  width: 400px;
+  padding: 25px;
+  transition: 0.5s all;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+.popup__text {
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  color: #ff75d3;
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 950px) {
+  .page__tickets {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+  [class*="__container"] {
+    padding: 0 15px;
+  }
+  .page {
+    padding: 30px 0 15px 0;
+  }
+  .page:first-child {
+    padding-top: 50px;
+  }
+  .page:last-child {
+    padding-bottom: 50px;
+  }
+  .page__title {
+    font-size: 28px;
+  }
+  .page__tickets img {
+    width: 100%;
+    height: 180px;
+  }
+  .page__location-text {
+    text-align: left;
+  }
+  .page-map__image {
+    width: 100%;
+  }
+
+  .popup {
+    width: 300px;
+  }
+}
